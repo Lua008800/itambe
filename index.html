@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Itambe</title>
+    <title>Itambe - Plataforma de Afiliação</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -83,7 +83,7 @@
     <div id="app-container" class="container mx-auto max-w-7xl p-4 sm:p-6 lg:p-8 hidden">
 
         <!-- Header -->
-        <header class="flex justify-between items-center mb-8">
+        <header class="sticky top-0 bg-gray-900 py-4 z-10 flex justify-between items-center mb-8">
             <h1 class="text-4xl font-bold text-blue-400">Itambé</h1>
             <div class="flex items-center gap-4">
                  <div class="text-right">
@@ -576,7 +576,7 @@
                         mobilePageTitle.textContent = button.textContent;
                     });
                 });
-                document.querySelector('nav .tab-button[data-tab="products"]').click();
+                document.querySelector('nav.sm\\:block .tab-button[data-tab="products"]').click();
                 
                 copyButton.addEventListener('click', () => {
                     referralLinkInput.select();
@@ -695,5 +695,4 @@
     </script>
 </body>
 </html>
-
 
